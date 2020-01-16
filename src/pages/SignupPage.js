@@ -1,11 +1,14 @@
-import React, { PureComponent } from "react";
-import AuthSignup from "../components/auth/AuthSignup"
+import React from 'react';
+import Auth from '../components/auth/Auth';
 
-export default class AuthLogin extends PureComponent {
+export default class SignUpPage extends React.Component {
 
-  render() {
-    return (
-      <AuthSignup />
-    );
-  }
+    render() {
+        return (
+            <div className="auth-page">
+                <h1>Sign up</h1>
+                <Auth type="signup"></Auth>
+            </div>
+        )
+    }
 }
